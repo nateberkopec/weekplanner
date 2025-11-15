@@ -1,0 +1,31 @@
+# Weekly Time Budget (in hours)
+# Calendar event titles should start with these category names
+
+categories:
+  # Work breakdown (40 hours)
+  "Work: Project A": 20
+  "Work: Project B": 12
+  "Work: Admin": 8
+
+  # Exercise/Health
+  "Exercise": 6
+
+  # Other
+  "Lunch": 7
+  "Errands": 2
+  "Commute": 5
+  "Hobbies": 5
+
+  # Family Time breakdown (40 hours)
+  "Partner Time": 10
+  "Family: Weekday Evenings": 10
+  "Family: Saturday": 10
+  "Family: Sunday": 10
+
+  # Sleep breakdown (63 hours)
+  "Wind down": 3.5
+  "Breakfast": 3.5
+  "Sleep": 56
+
+
+# Total should be 168 hours (7 days × 24 hours)
