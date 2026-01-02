@@ -73,13 +73,15 @@ end
 
 # Parse command line arguments
 debug_mode = ARGV.include?('--debug')
+budget_arg = ARGV.find { |arg| arg.start_with?('--budget=') }
+budget_file = budget_arg ? budget_arg.split('=', 2).last : 'budget.yml'
 date_arg = ARGV.find { |arg| !arg.start_with?('--') }
 
 week_start = date_arg ? validate_monday(date_arg) : next_monday
 week_end = week_start + 6
 
 # Load and validate budget
-budget = YAML.load_file('budget.yml')['categories']
+budget = YAML.load_file(budget_file)['categories']
 total_budgeted = budget.values.sum
 
 unless total_budgeted == 168
